@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>京东侧边</title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			li{
+				list-style: none;
+			}
+			.subnav{
+				margin: 100px auto;
+				width: 20px;
+			}
+			.subnav li{
+				width: 20px;
+				height: 20px;
+				margin: 3px 0;
+				background-color: pink;
+				position: relative;
+			}
+			
+			.subnav div{
+				position: absolute;
+				right: 0;
+				top: 0;
+				height: 20px;
+				width: 0;
+				background-color: purple;
+				transition: all 0.6s;    /*过渡动画*/
+				z-index: -1;       /*设置页面层级*/
+			}
+			.subnav li:hover div{
+				width: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="subnav">
+			<ul>
+				<li><div></div></li>
+				<li><div></div></li>
+				<li><div></div></li>
+				<li><div></div></li>
+				<li><div></div></li>
+			</ul>
+		</div>
+	</body>
+</html>
